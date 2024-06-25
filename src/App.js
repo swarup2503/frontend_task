@@ -7,7 +7,7 @@ import { addUser, getUsers } from "./actions/userActions";
 
 function App(props) {
   return (
-    <div>
+    <div className="main">
       <MainComponent {...props} />
     </div>
   );

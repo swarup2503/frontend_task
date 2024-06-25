@@ -18,7 +18,8 @@ export const addUser = (payload) => async dispatch => {
       body: JSON.stringify(payload),
       headers: {
         "Content-type": "application/json; charset=UTF-8"
-      }
+      },
+      mode: 'no-cors'
     });
     const parsedResponse = await response.json()
     if(parsedResponse.success){
